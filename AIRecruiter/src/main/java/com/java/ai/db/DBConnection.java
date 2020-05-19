@@ -25,7 +25,7 @@ public class DBConnection {
 			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 			
-			System.out.println("Creating statement...");
+			System.out.println("Inserting values.....");
 			stmt=conn.createStatement();
 			String sql;
 			sql = "insert into pdf_crawler values(105,'https://www.test_url.com')";
